@@ -12,7 +12,7 @@ cef.emit('pwd:try');
 cef.emit("game:hud:setComponentVisible", "interface", false);
 
 cef.on('pwd:money', (response) => {
-    moneys.innerHTML = response += "$";
+	moneys.innerHTML += response + "$";
 });
 cef.on('pwd:armour', (armours) => {
 	armour.value = armours;   
