@@ -10,6 +10,8 @@ body {
     left: 10px;
     display: flex;
     flex-direction: column;
+    z-index: 1000; /* Уточните значение z-index */
+    opacity: 1; /* Уточните значение прозрачности (1 - полностью видимый) */
 }
 
 #health-bar, #armor-bar {
@@ -17,6 +19,7 @@ body {
     height: 20px;
     background-color: red;
     margin-bottom: 5px;
+    border: 1px solid white; /* Обводка */
 }
 
 #armor-bar {
