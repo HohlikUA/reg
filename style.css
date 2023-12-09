@@ -1,0 +1,31 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: transparent;
+}
+
+.hud-container {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    flex-direction: column;
+    z-index: 1000;
+}
+
+#health-bar, #armor-bar {
+    width: 100px;
+    height: 20px;
+    background-color: red;
+    margin-bottom: 5px;
+    border: 1px solid rgb(44, 13, 13);
+}
+
+#armor-bar {
+    background-color: blue;
+}
+
+#money-display {
+    font-size: 16px;
+    color: rgb(40, 199, 61);
+}
