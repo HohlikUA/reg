@@ -1,0 +1,234 @@
+
+.speed-container
+{
+    float: right;
+    position: relative;
+    left:-50px;
+    top:790px;
+}
+
+.arrow
+{
+    position: absolute;
+    font-family: TT Norms;
+    color:white;
+    left:75px;
+    top:80Px;   
+    font-size: 20px;
+    /*transform: rotate(-140deg); */
+}
+.left
+{
+    position: absolute;
+    left:190px;
+    top:70Px;   
+}
+.right
+{
+    position: absolute;
+    left:325px;
+    top:70Px;   
+}
+.engine
+{
+    position: absolute;
+    left:180px;
+    top:15Px;  
+}
+.keys
+{
+    position: absolute;
+    left:220px;
+    top:15Px;  
+}
+.far
+{    
+    position: absolute;
+    left:260px;
+    top:15Px;
+}
+.park
+{
+    position: absolute;
+    left:300px;
+    top:15Px;
+}
+.gps-container
+{
+
+    position: absolute;
+    top:940px;
+    left:450px;
+}
+.help-container
+{
+    position: absolute;
+    top:800px;
+    left:450px;
+
+}
+.container-hud
+{
+    float: right;
+    position: relative;
+}
+
+.wanted1{
+    position: absolute;
+    top:290px;
+    left:49px;
+}
+.wanted2{
+    position: absolute;
+    top:290px;
+    left:77px;
+}
+.wanted3{
+    position: absolute;
+    top:290px;
+    left:106px;
+}
+.wanted4{
+    position: absolute;
+    top:290px;
+    left:134px;
+}
+.wanted5{
+    position: absolute;
+    top:290px;
+    left:162px;
+}
+.wanted6{
+    position: absolute;
+    top:290px;
+    left:190px;
+}
+.weapon
+{
+    left:120px;
+    top:105px;
+    color: white;
+    font-family: TT Norms;
+    position: absolute;
+    font-size: 20px;
+}
+.weapon-background
+{
+    position: absolute;
+    left:50px;
+    top:75px;
+}
+.wanted-background
+{
+    position: absolute;
+    left:50px;
+    top:290px;
+}
+.moneys
+{
+    color: white;
+    font-family: TT Norms;
+    position: absolute;
+    font-size: 15px;
+    left:90px;
+    top:260px;
+}
+.bars
+{
+    top:149.3px;
+    left:58px;
+	position: absolute;
+}
+progress.health{
+	border-radius: 8px;
+	width: 139px;
+	height: 6px;
+    position: relative;
+  }
+
+  progress.health::-webkit-progress-bar {
+      background-color: rgb(82, 82, 82);
+      border-radius: 8px;
+  }
+  progress.health::-webkit-progress-value {
+      background-color: #c62c8e;
+      background-image: linear-gradient(#c62c8e, #c62c8e);
+      border-radius: 8px;
+  }
+  progress.health::-moz-progress-bar {
+    background-color: #c62c8e;
+    background-image: linear-gradient(#c62c8e, #c62c8e);
+      border-radius: 8px;
+  }
+  progress.eat{
+	border-radius: 8px;
+	width: 139px;
+	height: 6px;
+    top:10px;
+    position: relative;
+  }
+
+  progress.eat::-webkit-progress-bar {
+      background-color: rgb(82, 82, 82);
+      border-radius: 8px;
+  }
+  progress.eat::-webkit-progress-value {
+      background-color: #86af87;
+      background-image: linear-gradient(#86af87, #86af87);
+      border-radius: 8px;
+  }
+  progress.eat::-moz-progress-bar {
+    background-color: #86af87;
+    background-image: linear-gradient(#86af87, #86af87);
+      border-radius: 8px;
+  }
+
+  progress.arm{
+	border-radius: 8px;
+	width: 139px;
+	height: 6px;
+    top:20px;
+    position: relative;
+
+  }
+
+  progress.arm::-webkit-progress-bar {
+      background-color: rgb(82, 82, 82);
+      border-radius: 8px;
+  }
+  progress.arm::-webkit-progress-value {
+      background-color: #feffff;
+      background-image: linear-gradient(#feffff, #feffff);
+      border-radius: 8px;
+  }
+  progress.arm::-moz-progress-bar {
+    background-color: #feffff;
+    background-image: linear-gradient(#feffff, #feffff);
+    border-radius: 8px;
+  }
+
+
+  progress.benz{
+	border-radius: 2px;
+	width: 125px;
+	height: 8px;
+    left:215px;
+    top:153px;
+    position: absolute;
+
+  }
+
+  progress.benz::-webkit-progress-bar {
+      background-color: rgb(82, 82, 82);
+      border-radius: 2px;
+  }
+  progress.benz::-webkit-progress-value {
+      background-color: #feffff;
+      background-image: linear-gradient(100deg, #242424, #a73232);
+      border-radius: 2px;
+  }
+  progress.benz::-moz-progress-bar {
+    background-color: #feffff;
+    background-image: linear-gradient(100deg, #242424, #a73232);
+    border-radius: 2px;
+  }
