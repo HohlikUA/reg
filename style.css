@@ -7,10 +7,10 @@ body {
 .hud-container {
     position: absolute;
     top: 10px;
-    right: 10px; /* РР·РјРµРЅРёР» left РЅР° right */
+    right: 10px; /* Изменил left на right */
     display: flex;
     flex-direction: column;
-    z-index: 1000; /* РЈС‚РѕС‡РЅРёС‚Рµ Р·РЅР°С‡РµРЅРёРµ z-index */
+    z-index: 1000; /* Уточните значение z-index */
 }
 
 #health-bar, #armor-bar {
@@ -18,7 +18,7 @@ body {
     height: 20px;
     background-color: red;
     margin-bottom: 5px;
-    border: 1px solid white; /* РћР±РІРѕРґРєР° */
+    border: 1px solid white; /* Обводка */
 }
 
 #armor-bar {
