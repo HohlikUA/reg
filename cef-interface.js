@@ -30,7 +30,7 @@ cef.on('pwd:nick', (response) => {
 cef.on('pwd:allitem', (money, nick, armours, hp) => {
 	if (money != -1)
 	{
-		moneys.innerHTML = money + "$";
+		moneys.innerHTML += money + "$";
 	}
 	if (nick != "")
 	{
