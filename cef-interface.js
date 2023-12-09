@@ -18,7 +18,6 @@ cef.on('pwd:armour', (armours) => {
 });
 cef.on('pwd:hp', (hp) => {
     progress.value = hp;
-    cef_emit_event("pwd:allitem", hp);
 });
 cef.on('pwd:nick', (response) => {
 	nicks.innerHTML = response;
