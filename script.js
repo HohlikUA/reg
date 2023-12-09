@@ -1,19 +1,29 @@
-document.addEventListener('DOMContentLoaded', function () {
-    const hudContainer = document.getElementById('hud-container');
+// Используем CEF-события для обновления HUD
 
-    // Пример обновления худа при получении данных от сервера
-    cef.emit('hud:update', { health: 80, armor: 50, money: 500 });
+cef.on('pwd:allitem', (money, nick, armours, hp) => {
+    // Получаем элементы худа через CEF
+    const nicks = cef.getHtmlElement('.nick_text');
+    const moneys = cef.getHtmlElement('.money_text');
+    const progress = cef.getHtmlElement('.styled');
+    const armour = cef.getHtmlElement('.styled1');
 
-    // Слушаем события от сервера
-    cef.subscribe('hud:update', function (data) {
-        // Обновляем данные худа
-        updateHUD(data.health, data.armor, data.money);
-    });
-
-    function updateHUD(health, armor, money) {
-        // Обновляем стили худа
-        document.getElementById('health-bar').style.width = health + '%';
-        document.getElementById('armor-bar').style.width = armor + '%';
-        document.getElementById('money-display').innerText = 'Money: $' + money;
+    // Обновляем данные худа
+    if (money !== -1) {
+        moneys.innerHTML = "$" + money;
+    }
+    if (nick !== "") {
+        nicks.innerHTML = nick;
+    }
+    if (armours !== -1) {
+        armour.value = armours;
+    }
+    if (hp !== -1) {
+        progress.value = hp;
     }
 });
+
+// Отправляем запрос на обновление данных HUD
+cef.emit('pwd:try');
+
+// Отключаем стандартный интерфейс
+cef.emit("game:hud:setComponentVisible", "interface", false);
