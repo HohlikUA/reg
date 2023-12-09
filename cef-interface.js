@@ -5,44 +5,42 @@ let moneys = document.querySelector('.money_text');
 let progress = document.querySelector('.styled');
 let armour = document.querySelector('.styled1');
 
-
 cef.emit('pwd:try');
 
 //interface off
 cef.emit("game:hud:setComponentVisible", "interface", false);
 
 cef.on('pwd:money', (response) => {
-	moneys.innerHTML += response + "$";
+	moneys.innerHTML = "$" + money;
 });
 cef.on('pwd:armour', (armours) => {
 	armour.value = armours;   
 });
 cef.on('pwd:hp', (hp) => {
-
-	progress.value = hp;
+    progress.value = hp;
+    cef_emit_event("pwd:allitem", hp);
 });
 cef.on('pwd:nick', (response) => {
 	nicks.innerHTML = response;
-
 });
 
 
 //новая функция ( -1 не работает )
 
 cef.on('pwd:allitem', (money, nick, armours, hp) => {
-	if(money != -1)
+	if (money != -1)
 	{
-		moneys.innerHTML += money + "$";
+		moneys.innerHTML = money + "$";
 	}
-	if(nick != "")
+	if (nick != "")
 	{
 		nicks.innerHTML = nick;
 	}
-	if(armours != -1)
+	if (armours != -1)
 	{
 		armour.value = armours; 
 	} 
-	if(hp != -1)
+	if (hp != -1)
 	{
 		progress.value = hp;
 	}
