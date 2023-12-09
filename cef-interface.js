@@ -5,14 +5,13 @@ let moneys = document.querySelector('.money_text');
 let progress = document.querySelector('.styled');
 let armour = document.querySelector('.styled1');
 
-
 cef.emit('pwd:try');
 
 //interface off
 cef.emit("game:hud:setComponentVisible", "interface", false);
 
 cef.on('pwd:money', (response) => {
-	moneys.innerHTML += response + "$";
+	moneys.innerHTML = "$" + money;
 });
 cef.on('pwd:armour', (armours) => {
 	armour.value = armours;   
