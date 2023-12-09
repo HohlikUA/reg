@@ -18,7 +18,8 @@ cef.on('pwd:armour', (armours) => {
 	armour.value = armours;   
 });
 cef.on('pwd:hp', (hp) => {
-    progress.value = hp;
+
+	progress.value = hp;
 });
 cef.on('pwd:nick', (response) => {
 	nicks.innerHTML = response;
@@ -29,19 +30,19 @@ cef.on('pwd:nick', (response) => {
 //новая функция ( -1 не работает )
 
 cef.on('pwd:allitem', (money, nick, armours, hp) => {
-	if (money != -1)
+	if(money != -1)
 	{
 		moneys.innerHTML += money + "$";
 	}
-	if (nick != "")
+	if(nick != "")
 	{
 		nicks.innerHTML = nick;
 	}
-	if (armours != -1)
+	if(armours != -1)
 	{
 		armour.value = armours; 
 	} 
-	if (hp != -1)
+	if(hp != -1)
 	{
 		progress.value = hp;
 	}

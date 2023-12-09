@@ -72,7 +72,7 @@
   }
   progress.styled::-webkit-progress-value {
       background-color: rgb(204, 62, 62);
-      background-image: linear-gradient(rgb(204, 62, 62)), rgb(204, 62, 62);
+      background-image: linear-gradient(rgb(204, 62, 62)), rgb(204, 62, 62));
       border-radius: 8px;
   }
   progress.styled::-moz-progress-bar {
@@ -98,7 +98,7 @@
   }
   progress.styled1::-webkit-progress-value {
       background-color: rgb(53, 101, 233);
-      background-image: linear-gradient(rgb(53, 101, 233)), rgb(53, 101, 233);
+      background-image: linear-gradient(rgb(53, 101, 233)), rgb(53, 101, 233));
       border-radius: 8px;
   }
   progress.styled1::-moz-progress-bar {
@@ -170,7 +170,7 @@
 	font-weight: bold;
 	line-height: 0.85;
 	text-align: center;
-	transform: matrix( 1.02493819658632,0,1.07034501209888e-14,1.02493819658632,0,0);
+	-moz-transform: matrix( 1.02493819658632,0,1.07034501209888e-14,1.02493819658632,0,0);
 	-webkit-transform: matrix( 1.02493819658632,0,1.07034501209888e-14,1.02493819658632,0,0);
 	-ms-transform: matrix( 1.02493819658632,0,1.07034501209888e-14,1.02493819658632,0,0);
 	position: absolute;
@@ -197,7 +197,7 @@
   }
   progress.styled2::-webkit-progress-value {
       background-color: rgb(53, 101, 233);
-      background-image: linear-gradient(rgb(53, 101, 233)), rgb(53, 101, 233);
+      background-image: linear-gradient(rgb(53, 101, 233)), rgb(53, 101, 233));
       border-radius: 8px;
   }
   progress.styled2::-moz-progress-bar {
